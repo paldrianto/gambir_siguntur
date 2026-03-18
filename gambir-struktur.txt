@@ -1,0 +1,29 @@
+gambir-website/
+│
+├── index.html              # Halaman utama (beranda)
+├── about.html              # Tentang gambir (edukasi)
+├── products.html           # Katalog produk
+├── blog.html               # Artikel edukasi tambahan
+├── contact.html            # Kontak & pemesanan
+│
+├── assets/                 # Folder aset
+│   ├── css/                # File CSS
+│   │   └── style.css
+│   ├── js/                 # File JavaScript
+│   │   └── main.js
+│   ├── img/                # Gambar produk, logo, banner
+│   └── fonts/              # Font khusus (opsional)
+│
+├── admin/                  # Panel admin (opsional)
+│   ├── dashboard.html
+│   ├── manage-products.html
+│   └── manage-orders.html
+│
+├── data/                   # Data statis atau JSON
+│   └── products.json
+│
+└── backend/                # Folder backend (jika pakai PHP/Node.js)
+    ├── config/             # Konfigurasi database
+    ├── controllers/        # Logika bisnis
+    ├── models/             # Struktur data
+    └── routes/             # Routing API

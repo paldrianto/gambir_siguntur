@@ -1,0 +1,211 @@
+/* ====== Global Style ====== */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #c2a679; /* krem vintage */
+  color: #3e3e3e;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: #2f4f2f; /* hijau tua vintage */
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background-color: #c2a679 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+}
+
+/* tulisan Gambir pada logo */
+.navbar-brand .brand-text {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #2f4f2f !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Efek saat logo diklik */
+.navbar-brand:active .brand-text {
+  color: #faf9f6 !important;
+}
+
+.navbar .nav-link {
+  color: #2f4f2f !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 15px !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #faf9f6 !important; /*text putih saatt hover aktif*/
+  background-color: rgb(47, 79, 47, 0.1);
+  border-radius: 5px;
+}
+
+/* ====== Hero Section ====== */
+header {
+  background:
+    linear-gradient(rgba(47, 79, 47, 0.7), rgba(47, 79, 47, 0.7)),
+    url("../img/daun1.png") center/cover no-repeat;
+  color: #faf9f6;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #c2a679;
+}
+
+/* ====== Kotak Utama Testimoni (Scroll Box) ====== */
+#containerTestimoni {
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3); /* Putih transparan lembut */
+  border-radius: 15px;
+  border: 1px solid rgba(47, 79, 47, 0.1);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+/* Custom Scrollbar */
+#containerTestimoni::-webkit-scrollbar {
+  width: 8px;
+}
+#containerTestimoni::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+#containerTestimoni::-webkit-scrollbar-thumb {
+  background: #2f4f2f;
+  border-radius: 10px;
+}
+
+/* ====== Testimonial Card ====== */
+.testimonial-card {
+  background-color: #faf9f6;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center; /* Sejajar tengah antara lingkaran dan teks */
+  gap: 20px;
+  transition: all 0.3s ease;
+  border: 1px solid #d9cbb5;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: #2f4f2f;
+}
+
+.initial-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #2f4f2f;
+  color: #faf9f6;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.testimonial-content strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #2f4f2f;
+  margin-bottom: 4px;
+  text-transform: capitalize;
+}
+
+.testimonial-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+/* ====== Form Style ====== */
+.card {
+  border: none;
+  background-color: #faf9f6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+#formKomentar input,
+#formKomentar textarea {
+  border: 1px solid #d9cbb5;
+  border-radius: 8px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+#formKomentar input:focus,
+#formKomentar textarea:focus {
+  border-color: #2f4f2f;
+  box-shadow: 0 0 0 0.2rem rgba(47, 79, 47, 0.15);
+  outline: none;
+}
+
+/* ====== Button Brand ====== */
+.btn-brand {
+  background-color: #c2a679;
+  color: #2f4f2f;
+  border: none;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+  background-color: #2f4f2f;
+  color: #faf9f6;
+  transform: scale(1.02);
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: #3e2a1c;
+  padding: 30px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #c2a679;
+  font-weight: 500;
+}
+
+/* ====== Responsiveness ====== */
+@media (max-width: 768px) {
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .initial-circle {
+    margin: 0 auto;
+  }
+}
